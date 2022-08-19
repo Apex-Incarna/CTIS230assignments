@@ -1,0 +1,15 @@
+*{
+    color: darkcyan;
+    padding: 0;
+    margin: 0;
+}
+h2{
+    color: lightcoral;
+}
+header{
+    background: rgb(0,172,127);
+    background: linear-gradient(304deg, rgba(0,172,127,0.8071603641456583) 0%, rgba(167,120,167,0.76234243697479) 50%, rgba(0,212,255,0.773546918767507) 100%);
+}
+.centered{
+    margin: 0 auto;
+}
