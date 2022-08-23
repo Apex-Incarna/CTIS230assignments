@@ -1,15 +1,54 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+* {
     color: darkcyan;
     padding: 0;
-    margin: 0;
+    margin: 0 0 1% 0;
+    font-size: 1rem;
 }
-h2{
+
+body {
+    background-color: seashell;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
     color: lightcoral;
+    font-size: 2em;
 }
-header{
-    background: rgb(0,172,127);
-    background: linear-gradient(304deg, rgba(0,172,127,0.8071603641456583) 0%, rgba(167,120,167,0.76234243697479) 50%, rgba(0,212,255,0.773546918767507) 100%);
+
+h3 {
+    font-size: 1.5em;
 }
-.centered{
+
+header {
+    /* This nice gradient is courtesy of cssgradient.io */
+    background: rgb(0, 172, 127);
+    background: linear-gradient(304deg, rgba(0, 172, 127, 0.75) 0%, rgba(167, 120, 167, 0.75) 50%, rgba(0, 212, 255, 0.75) 100%);
+    height: min-content;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-family: 'Indie Flower', cursive;
+}
+
+main {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+footer {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+div hr {
     margin: 0 auto;
+    width: 80vw;
+}
+
+header img {
+    width: 100%;
 }
