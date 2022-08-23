@@ -4,7 +4,7 @@
     color: darkcyan;
     padding: 0;
     margin: 0 0 1% 0;
-    font-size: 1rem;
+    font-size: 1.5vw;
 }
 
 body {
@@ -28,10 +28,11 @@ header {
     /* This nice gradient is courtesy of cssgradient.io */
     background: rgb(0, 172, 127);
     background: linear-gradient(304deg, rgba(0, 172, 127, 0.75) 0%, rgba(167, 120, 167, 0.75) 50%, rgba(0, 212, 255, 0.75) 100%);
-    height: min-content;
+    min-height: min-content;
     padding-left: 15%;
     padding-right: 15%;
     font-family: 'Indie Flower', cursive;
+    max-height: 100vh;
 }
 
 main {
@@ -50,5 +51,16 @@ div hr {
 }
 
 header img {
-    width: 100%;
+    max-width: 100%;
+    max-height: min-content;
+}
+
+.centered {
+    margin: 0 auto;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 700;
 }
