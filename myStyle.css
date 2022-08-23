@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 * {
-    color: darkcyan;
     padding: 0;
     margin: 0 0 1% 0;
     font-size: 1rem;
@@ -11,6 +10,8 @@
 
 body {
     background-color: seashell;
+    color: darkcyan;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -20,6 +21,8 @@ h1 {
 h2 {
     color: lightcoral;
     font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
 }
 
 h3 {
@@ -54,14 +57,27 @@ div hr {
 header img {
     width: 100%;
 }
-main p img{
+
+main p img {
     float: right;
     width: 50%;
 }
-a {
+
+a:link{
     text-decoration: none;
     font-weight: 700;
+    color: darkcyan;
 }
-a:hover{
+
+a:hover {
     opacity: .5;
+}
+a:active{
+    opacity: 1;
+}
+a:visited{
+    color: rgb(2, 170, 170);
+}
+.orange {
+    color: lightcoral;
 }
