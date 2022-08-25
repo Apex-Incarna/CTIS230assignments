@@ -29,6 +29,19 @@ h3 {
     font-size: 1.5em;
 }
 
+h4 {
+    font-size: .75em;
+}
+
+h4,
+#citation {
+    color: darkcyan;
+}
+
+#citation {
+    font-size: 1em;
+}
+
 header {
     /* This nice gradient is courtesy of cssgradient.io */
     background: rgb(0, 172, 127);
@@ -39,11 +52,7 @@ header {
     font-family: 'Indie Flower', cursive;
 }
 
-main {
-    padding-left: 15%;
-    padding-right: 15%;
-}
-
+main,
 footer {
     padding-left: 15%;
     padding-right: 15%;
@@ -58,23 +67,25 @@ header img {
     width: 100%;
 }
 
-main p img {
+#qMark {
     float: right;
     width: 50%;
     padding-left: 3%;
 }
 
-main p, li {
+main p,
+li {
     text-align: justify;
 }
+
 li {
     margin-left: 5%;
 }
 
-a:link {
+a {
     text-decoration: none;
     font-weight: 700;
-    color: darkcyan;
+    color: rgb(201, 173, 15);
 }
 
 a:hover {
@@ -86,9 +97,29 @@ a:active {
 }
 
 a:visited {
-    color: rgb(2, 170, 170);
+    opacity: .25;
 }
 
 .orange {
     color: lightcoral;
+}
+
+.first {
+    color: rgb(0, 180, 139);
+}
+
+.second {
+    color: rgb(0, 160, 139);
+}
+
+.third {
+    color: rgb(0, 140, 139);
+}
+
+.fourth {
+    color: rgb(0, 120, 139);
+}
+
+.fifth {
+    color: rgb(0, 100, 139);
 }
