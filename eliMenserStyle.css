@@ -123,14 +123,17 @@ a:visited {
 
 .navbar, footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 1%;
     height: min-content;
     margin: 0;
 }
 footer{
-    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
 }
+
 .navbar{
     width: 100%;
     background-color: coral;
