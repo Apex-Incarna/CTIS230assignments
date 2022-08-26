@@ -46,6 +46,7 @@ header {
     height: min-content;
     padding-left: 15%;
     padding-right: 15%;
+    padding-top: 5%;
     font-family: 'Indie Flower', cursive;
 }
 
@@ -81,7 +82,7 @@ li {
 a:link {
     text-decoration: none;
     font-weight: 700;
-    color: rgb(201, 173, 15);
+    color: darkcyan;
 }
 
 a:hover {
@@ -132,5 +133,7 @@ footer{
 }
 .navbar{
     width: 100%;
-    background-color: black;
+    background-color: coral;
+    opacity: .9;
+    position: fixed;
 }
