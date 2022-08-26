@@ -12,6 +12,7 @@ body {
     background-color: seashell;
     color: darkcyan;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /* I haven't changed the margins for the body because I've already done this for everything using the *, and then I also wish to have the seashell color to apply to the entire document (that's not the header) */
 }
 
 h1 {
@@ -27,10 +28,6 @@ h2 {
 
 h3 {
     font-size: 1.5em;
-}
-
-h4 {
-    font-size: .75em;
 }
 
 h4,
@@ -52,8 +49,7 @@ header {
     font-family: 'Indie Flower', cursive;
 }
 
-main,
-footer {
+main {
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -82,7 +78,7 @@ li {
     margin-left: 5%;
 }
 
-a {
+a:link {
     text-decoration: none;
     font-weight: 700;
     color: rgb(201, 173, 15);
@@ -122,4 +118,19 @@ a:visited {
 
 .fifth {
     color: rgb(0, 100, 139);
+}
+
+.navbar, footer{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 1%;
+    height: min-content;
+    margin: 0;
+}
+footer{
+    display: flex;
+}
+.navbar{
+    width: 100%;
+    background-color: black;
 }
