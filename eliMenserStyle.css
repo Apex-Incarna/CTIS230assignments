@@ -44,15 +44,14 @@ header {
     background: rgb(0, 172, 127);
     background: linear-gradient(304deg, rgba(0, 172, 127, 0.75) 0%, rgba(167, 120, 167, 0.75) 50%, rgba(0, 212, 255, 0.75) 100%);
     height: min-content;
-    padding-left: 15%;
-    padding-right: 15%;
     padding-top: 5%;
     font-family: 'Indie Flower', cursive;
 }
 
-main {
-    padding-left: 15%;
-    padding-right: 15%;
+main,
+header {
+    padding-left: 20%;
+    padding-right: 20%;
 }
 
 div hr {
@@ -121,22 +120,43 @@ a:visited {
     color: rgb(0, 100, 139);
 }
 
-.navbar, footer{
+.navbar,
+footer {
     display: flex;
     justify-content: space-evenly;
     padding-top: 1%;
     height: min-content;
     margin: 0;
 }
-footer{
+
+footer {
     justify-content: space-between;
     padding-left: 10%;
     padding-right: 10%;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     background-color: coral;
     opacity: .9;
     position: fixed;
+}
+
+#sidebar {
+    background-color: blanchedalmond;
+    margin: 0;
+    font-size: 1.5em;
+    font-style: italic;
+    width: 10vw;
+    padding: 3%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+    #sidebar {
+        display: none;
+    }
 }
