@@ -142,7 +142,7 @@ footer {
     position: fixed;
 }
 
-#sidebar {
+.sidebar {
     background-color: blanchedalmond;
     margin: 0;
     font-size: 1.5em;
@@ -155,8 +155,63 @@ footer {
     text-align: left;
 }
 
+.ad {
+    margin: auto;
+    text-align: center;
+    width: 40vw;
+    background-color: blue;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.adText {
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+    padding: 0 10%;
+}
+
+.adButton {
+    background-color: yellow;
+    padding: 3%;
+    border-radius: 10px;
+    font-size: 2em;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.cooking {
+    animation: cooking 5s linear both;
+}
+
+/* .cooling {
+    animation: cooling 5s linear both;
+} */
+
+@keyframes cooking {
+    from {background-color: "";}
+    to {background-color: red;}
+}
+
+@keyframes cooling {
+    from {background-color: "red";}
+    to {background-color: "seashell";}
+}
+
 @media screen and (max-width: 1000px) {
     #sidebar {
         display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #sidebar {
+        display: none;
+    }
+    main p, li{
+        text-align: left;
+    }
+    .adText {
+        padding: 0;
     }
 }
