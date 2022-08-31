@@ -6,20 +6,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="eliMenserStyle.css">
-    <script src="javaScript.js" defer></script>
+    <script src="questionsJS.js" defer></script>
 </head>
 
-<body>
+<body id="everything">
     <section class="navbar">
         <div class="links"><a href="Questions.html">Questions</a></div>
         <div class="links"><a href="KeyTerms.html">Key Terms</a></div>
-        <div class="links"><a href="index.html">Back to Main Page</a></div>
+        <div class="links"><a href="index.html">Main Page</a></div>
     </section>
     <header>
         <h1 class="orange">Questions</h1>
     </header>
     <main>
-        <div>
+        <div id="questionsText">
             <img id="qMark" src="img/q-mark.png" alt="A large Question Mark">
             <p class="first">I don’t have many, but one that has got me thinking is whether an even bigger bubble could be made. With
                 more solution, could an even bigger record-setting bubble be made?</p>
@@ -30,7 +30,7 @@
         </div>
         <div class="qBox">
             <div class="qText">Have a question you would like to ask? Enter it in the box below:</div>
-            <input><button>Post</button>
+            <input id="inputQuestion" value=""><button id="postButton">Post</button>
         </div>
     </main>
     <div>

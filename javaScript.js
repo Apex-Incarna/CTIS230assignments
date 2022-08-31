@@ -15,7 +15,7 @@ function bye(){
     body.style.backgroundColor = "";  
     body.style.color = "";
 }
-// This code sets up the button element
+// This code sets up the cooking button element
 button = document.getElementById("button");
 
 button.addEventListener("click", buttonClick);
@@ -28,5 +28,4 @@ button.addEventListener("mouseout", buttonBye);
 
 function buttonBye() {
     body.classList.remove("cooking");
-    body.classList.add("cooling");
 }

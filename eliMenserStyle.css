@@ -63,6 +63,12 @@ header img {
     width: 100%;
 }
 
+#questionsText::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 #qMark {
     float: right;
     width: 50%;
@@ -161,11 +167,11 @@ footer {
     text-align: center;
     width: 40vw;
     background-color: blue;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 1%;
 }
 
-.adText {
+.adWords {
     color: white;
     font-size: 2em;
     font-family: sans-serif;
@@ -175,7 +181,7 @@ footer {
 .adButton {
     background-color: yellow;
     padding: 3%;
-    border-radius: 10px;
+    border-radius: 30px;
     font-size: 2em;
     font-family: sans-serif;
     cursor: pointer;
@@ -183,6 +189,15 @@ footer {
 
 .cooking {
     animation: cooking 5s linear both;
+}
+
+.qBox {
+    background-color: white;
+    border-radius: 10px;
+    border-style: inset;
+    border-width: 1px;
+    padding: 1%;
+    text-align: center;
 }
 
 /* .cooling {
