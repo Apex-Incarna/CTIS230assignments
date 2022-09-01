@@ -205,13 +205,9 @@ footer {
 } */
 
 @keyframes cooking {
-    from {background-color: "";}
-    to {background-color: red;}
-}
-
-@keyframes cooling {
-    from {background-color: "red";}
-    to {background-color: "seashell";}
+    0% {background-color: "";}
+    50% {background-color: red;}
+    100% {background-color: seashell;}
 }
 
 @media screen and (max-width: 1000px) {
