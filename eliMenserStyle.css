@@ -4,6 +4,8 @@
     padding: 0;
     margin: 0 0 1% 0;
     font-size: 1rem;
+    transition-property: all;
+    transition-duration: 0.1s;
     /* border: 1px dotted black; */
     /* This border is designed to be uncommented in order to see the boxes on the page for help with positioning */
 }
@@ -45,6 +47,7 @@ header {
     background: linear-gradient(304deg, rgba(0, 172, 127, 0.75) 0%, rgba(167, 120, 167, 0.75) 50%, rgba(0, 212, 255, 0.75) 100%);
     height: min-content;
     padding-top: 5%;
+    padding-bottom: 1%;
     font-family: 'Indie Flower', cursive;
 }
 
@@ -56,11 +59,15 @@ header {
 
 div hr {
     margin: 0 auto;
-    width: 80vw;
+    width: 90vw;
 }
 
 header img {
     width: 100%;
+}
+
+.altHeaderImg {
+    display: none;
 }
 
 #questionsText::after {
@@ -211,19 +218,60 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
-    #sidebar {
+    .sidebar {
         display: none;
     }
 }
 
 @media screen and (max-width: 750px) {
-    #sidebar {
-        display: none;
-    }
-    main p, li{
+
+    main p,
+    li {
         text-align: left;
     }
+
+    header {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
     .adText {
         padding: 0;
+    }
+
+    .ad {
+        width: 65vw;
+    }
+
+    .headerImg {
+        display: none;
+    }
+
+    .alt {
+        display: block;
+    }
+
+    header div {
+        font-size: .75em;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    * {
+        font-size: .9rem;
+        word-spacing: .5vw;
+    }
+}
+
+@media (orientation: portrait) {
+    div hr {
+        width: 50vw;
     }
 }
