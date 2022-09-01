@@ -4,8 +4,7 @@
     padding: 0;
     margin: 0 0 1% 0;
     font-size: 1rem;
-    transition-property: all;
-    transition-duration: 0.1s;
+    hyphens: auto;
     /* border: 1px dotted black; */
     /* This border is designed to be uncommented in order to see the boxes on the page for help with positioning */
 }
@@ -82,6 +81,31 @@ header img {
     padding-left: 3%;
 }
 
+#arXiv {
+    float: right;
+    padding-left: 3%;
+    cursor: pointer;
+}
+
+div#arXivLarge {
+    position: fixed;
+    /* top: 10px;
+    left: 10px; */
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#arXivLarge img {
+    width: 100vw;
+}
+
+.dontshow {
+    visibility: hidden;
+}
+
 main p,
 li {
     text-align: justify;
@@ -95,6 +119,8 @@ a:link {
     text-decoration: none;
     font-weight: 700;
     color: darkcyan;
+    /* transition-property: opacity;
+    transition-duration: .3s; */
 }
 
 a:hover {
@@ -106,7 +132,7 @@ a:active {
 }
 
 a:visited {
-    opacity: .25;
+    opacity: 1;
 }
 
 .orange {
@@ -206,10 +232,6 @@ footer {
     padding: 1%;
     text-align: center;
 }
-
-/* .cooling {
-    animation: cooling 5s linear both;
-} */
 
 @keyframes cooking {
     0% {background-color: "";}
